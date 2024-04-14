@@ -1,0 +1,49 @@
+.todo-list {
+    font-family: Arial, sans-serif;
+}
+
+.todo-item {
+    padding: 20px;
+    margin: 10px 0;
+    border: 3px solid black; /* Changed border color to match the new background color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: transparent; /* Changed background color to grey */
+    transition: background-color 0.3s;
+    position: relative; /* Add relative positioning for absolute positioning of buttons */
+}
+
+.todo-item:hover {
+    background-color: rgb(183, 182, 182); /* Changed hover background color to white */
+}
+
+.todo-item h1 {
+    margin-bottom: 10px;
+}
+
+.todo-item h2 {
+    margin-bottom: 15px;
+}
+
+.todo-item button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Add absolute positioning for shifting buttons */
+    top: 50%; /* Align buttons vertically in the middle */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+.todo-item .complete-button {
+    background-color: #007bff; /* Changed button background color to blue */
+    color: #fff; /* Changed button text color to white */
+    right: 140px; /* Add right margin to the complete button */
+}
+
+.todo-item .delete-button {
+    background-color: #D2122E; /* Changed button background color to red */
+    color: #fff; /* Changed button text color to white */
+    right: 10px; /* Add right margin to the delete button */
+    margin-right: 0px; /* Adjusted margin for delete button */
+}
